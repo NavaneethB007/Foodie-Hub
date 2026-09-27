@@ -1,209 +1,89 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: #fff5e9;
-    overflow: hidden;
-    text-align: center;
+    background-color: #FFF5E9;
+    color: #302721;
 }
+
 h1{
-    color: #c94f2c;
+    color: #C75B45;
+    margin-top: 20px;
 }
-.info{
+
+.offer-text{
+    font-size: 18px;
     color: #555;
 }
-.offer-area{
-    width: 100%;
-    height: 80vh;
-    position: relative;
+
+.back-btn{
+    background-color: #C75B45;
+    color: white;
+    margin-top: 20px;
+    border-radius: 20px;
 }
+
+.back-btn:hover{
+    background-color: #E85D2A;
+    color: white;
+}
+
 .offer-card{
-    width: 220px;
-    padding: 15px;
-    background-color: white;
     border-radius: 15px;
-    position: absolute;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    text-align: center;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    opacity: 0;
+    animation: flick 0.8s ease forwards;
 }
+
 .offer-card img{
     width: 100%;
-    height: 120px;
+    height: 170px;
     object-fit: cover;
     border-radius: 10px;
 }
-.offer-card button{
-    background-color: #e85d2a;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 20px;
+
+@keyframes flick{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-50px) rotate(-8deg);
+    }
+
+    70%{
+        opacity: 1;
+        transform: translateY(10px) rotate(3deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
 }
-.offer-card:hover{
-    animation-play-state: paused;
-    transform: scale(1.08);
-}
+
 .card1{
-    animation: move1 8s linear infinite;
+    animation-delay: 0.1s;
 }
-.back-btn{
-    display: inline-block;
-    margin: 10px;
-    color: white;
-    background-color: #c75b45;
-    padding: 10px 18px;
-    text-decoration: none;
-    border-radius: 20px;
-}
-.back-btn:hover{
-    background-color: #e85d2a;
-}
-@keyframes move1{
-    0%{
-        left: 5%;
-        top: 5%;
-    }
-    25%{
-        left: 65%;
-        top: 10%;
-    }
-    50%{
-        left: 70%;
-        top: 55%;
-    }
-    75%{
-        left: 20%;
-        top: 60%;
-    }
-    100%{
-        left: 5%;
-        top: 5%;
-    }
-}
+
 .card2{
-    animation: move2 10s linear infinite;
+    animation-delay: 0.2s;
 }
-@keyframes move2{
-    0%{
-        left: 70%;
-        top: 5%;
-    }
-    25%{
-        left: 60%;
-        top: 55%;
-    }
-    50%{
-        left: 10%;
-        top: 50%;
-    }
-    75%{
-        left: 20%;
-        top: 10%;
-    }
-    100%{
-        left: 70%;
-        top: 5%;
-    }
-}
+
 .card3{
-    animation: move3 9s linear infinite;
+    animation-delay: 0.3s;
 }
-@keyframes move3{
-    0%{
-        left: 35%;
-        top: 5%;
-    }
-    25%{
-        left: 70%;
-        top: 35%;
-    }
-    50%{
-        left: 35%;
-        top: 60%;
-    }
-    75%{
-        left: 5%;
-        top: 30%;
-    }
-    100%{
-        left: 35%;
-        top: 5%;
-    }
-}
+
 .card4{
-    animation: move4 11s linear infinite;
+    animation-delay: 0.4s;
 }
-@keyframes move4{
-    0%{
-        left: 10%;
-        top: 55%;
-    }
-    25%{
-        left: 40%;
-        top: 10%;
-    }
-    50%{
-        left: 70%;
-        top: 45%;
-    }
-    75%{
-        left: 40%;
-        top: 55%;
-    }
-    100%{
-        left: 10%;
-        top: 55%;
-    }
-}
+
 .card5{
-    animation: move5 7s linear infinite;
+    animation-delay: 0.5s;
 }
-@keyframes move5{
-    0%{
-        left: 55%;
-        top: 50%;
-    }
-    25%{
-        left: 15%;
-        top: 20%;
-    }
-    50%{
-        left: 50%;
-        top: 5%;
-    }
-    75%{
-        left: 70%;
-        top: 35%;
-    }
-    100%{
-        left: 55%;
-        top: 50%;
-    }
-}
+
 .card6{
-    animation: move6 12s linear infinite;
-}
-@keyframes move6{
-    0%{
-        left: 25%;
-        top: 35%;
-    }
-    25%{
-        left: 60%;
-        top: 55%;
-    }
-    50%{
-        left: 70%;
-        top: 15%;
-    }
-    75%{
-        left: 5%;
-        top: 10%;
-    }
-    100%{
-        left: 25%;
-        top: 35%;
-    }
+    animation-delay: 0.6s;
 }

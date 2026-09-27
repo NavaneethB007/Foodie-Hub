@@ -4,102 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="hub.css">
 </head>
 <body>
-    <header>
-        <img id="logo" src="logo.png" alt="">
-        <h1>Foodie Hub</h1>
-        <nav>
-            <a href="#welcome">Home</a>
-            <a href="#Food_Menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>  
-            <button class="btn">Go to cart</button>
+<header class="navbar">
+    <div class="container-fluid d-flex flex-wrap align-items-center gap-3">
+        <a href="#welcome" class="navbar-brand d-flex align-items-center">
+            <img id="logo" src="logo.png" alt="Foodie Hub Logo">
+            <h1 class="fs-4 mb-0">Foodie Hub</h1>
+        </a>
+        <nav class="d-flex flex-wrap align-items-center justify-content-center gap-3 ms-lg-auto">
+            <a class="nav-link" href="#welcome">Home</a>
+            <a class="nav-link" href="#Food_Menu">Menu</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <button class="btn">Go to Cart</button>
         </nav>
-    </header>
-    <br>
-    <main>
-        <section id="welcome">
-            <h2><b>Welcome to Foodie Hub</b></h2><br>
-            <h3><b>Good Food. Great Moments.</b></h3><br>
-            <p>Discover delicious flavors, warm hospitality, and a dining experience made for every occasion.
-                From comforting classics to exciting new tastes, we're here to make every meal memorable.</p>
-                <b>Come hungry. Leave happy.</b><br>
-                <button class="btn">Explore Menu</button>
-                <button class="btn">Reserve a Table</button>
-        </section>
-        <br>
-        <section id="Food_Menu">
-            <h2 class="cap">Food Menu</h2>
-            <div class="menu_items">
-                <div class="card">
-                    <img  src="images-3.jpeg" alt="">
-                    <p><b>Biriyani</b> 210/-</p>
-                    <button class="btn">Add to cart</button>
-                </div>
-                <div class="card">
-                    <img  src="images-5.jpeg" alt="">
-                    <p><b>Idli</b> 80/-</p>
-                    <button class="btn">Add to cart</button>
-                </div>
-                <div class="card">
-                    <img  src="images-7.jpeg" alt="">
-                    <p><b>Pizza</b> 200/-</p>
-                    <button class="btn">Add to cart</button>
-                </div>
-                <div class="card">
-                    <img  src="images.jpeg" alt="">
-                    <p><b>Thali</b> 100/-</p>
-                    <button class="btn">Add to cart</button>
-                </div>
-                <div class="card">
-                    <img  src="images-8.jpeg" alt="">
-                    <p><b>Noodles</b> 150/-</p>
-                    <button class="btn">Add to cart</button>
-                </div>
-                <div class="card">
-                    <img  src="images-9.jpeg" alt="">
-                    <p><b>Sandwich</b> 120/-</p>
-                    <button class="btn">Add to cart</button>
+    </div>
+</header>
+<main>
+<section id="welcome">
+    <div class="container">
+        <h2 class="mb-3">Welcome to Foodie Hub</h2>
+        <h3 class="mb-3">Good Food. Great Moments.</h3>
+        <p class="mb-4">
+            Discover delicious flavors, warm hospitality,
+            and a dining experience made for every occasion.
+            From comforting classics to exciting new tastes,
+            we're here to make every meal memorable.
+        </p>
+        <h4 class="mb-3">Come hungry. Leave happy.</h4>
+        <button class="btn">Explore Menu</button>
+        <button class="btn">Reserve a Table</button>
+    </div>
+</section>
+<section id="Food_Menu">
+    <h2 class="cap">Food Menu</h2>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images-3.jpeg" class="card-img-top" alt="Biriyani">
+                    <div class="card-body">
+                        <h5 class="card-title">Biriyani</h5>
+                        <p class="card-text">₹210</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
                 </div>
             </div>
-        </section>
-        <br>
-        <section id="offer">
-            <h2>Weekend Special</h2>
-            <h1>20% OFF</h1>
-            <p>
-                Enjoy special discounts on selected dishes
-                every Saturday and Sunday.
-            </p>
-            <a href="offers.html" class="btn">Check Offers</a>
-        </section>
-        <br>
-        <section id="about">
-            <h2 class="cap">About Foodie Hub</h2>
-            <h3>More Than Just a Meal</h3>
-            <p>
-                At Foodie Hub, we believe great food brings people together.
-                Our goal is to create a warm and welcoming place where you can
-                enjoy delicious food, relax with friends and family, and create
-                memorable moments.
-            </p>
-            <p>
-                From freshly prepared favorites to exciting new flavors,
-                every dish is made with care and served with a passion for good food.
-            </p>
-            <b>Good food. Warm hospitality. Great memories.</b>
-        </section>
-        <br>
-        <footer>
-            <p>open 24hrs</p>
-            <p><b>Location:padamugal,Kakannad</b></p>
-            <a id="contact" href="tel:97897979797">contact</a>
-        </footer>
-        <div class="copyright">
-            <p>© 2026 Foodie Hub | Made with ❤️ for food lovers</p>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images-5.jpeg" class="card-img-top" alt="Idli">
+                    <div class="card-body">
+                        <h5 class="card-title">Idli</h5>
+                        <p class="card-text">₹80</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images-7.jpeg" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">₹200</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images.jpeg" class="card-img-top" alt="Thali">
+                    <div class="card-body">
+                        <h5 class="card-title">Thali</h5>
+                        <p class="card-text">₹100</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images-8.jpeg" class="card-img-top" alt="Noodles">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles</h5>
+                        <p class="card-text">₹150</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card p-3 text-center">
+                    <img src="images-9.jpeg" class="card-img-top" alt="Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">₹120</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </div>
+</section>
+<section id="offer">
+    <div class="container text-center">
+        <h2 class="cap">Weekend Special – 20% OFF</h2>
+        <p>
+            Enjoy special discounts on selected dishes
+            every Saturday and Sunday.
+        </p>
+        <a href="offers.html" class="btn">Check Offers</a>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <h2 class="cap text-center mb-4">About Foodie Hub</h2>
+        <h3 class="mb-3">More Than Just a Meal</h3>
+        <p class="mb-3">
+            At Foodie Hub, we believe great food brings people together.
+            Our goal is to create a warm and welcoming place where you can
+            enjoy delicious food, relax with friends and family, and create
+            memorable moments.
+        </p>
+        <p class="mb-3">
+            From freshly prepared favorites to exciting new flavors,
+            every dish is made with care and served with a passion for good food.
+        </p>
+        <b>Good food. Warm hospitality. Great memories.</b>
+    </div>
+</section>
+<footer id="contact" class="d-flex flex-column flex-md-row align-items-center justify-content-around gap-3">
+    <p class="mb-0">Open 24hrs</p>
+    <p class="mb-0">
+        <b>Location: Padamugal, Kakkanad</b>
+    </p>
+    <a href="tel:97897979797">Contact</a>
+</footer>
+<div class="copyright">
+    <p>© 2026 Foodie Hub | Made with ❤️ for food lovers</p>
+</div>
+</main>
 </body>
 </html>
