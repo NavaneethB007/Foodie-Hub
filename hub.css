@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFAF5;
+    color: #302721;
+    font-family: sans-serif;
+    margin: 0px;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+header h1{
+    color: #D94F29;
+    margin-left: 15px;
+}
+nav{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-left: auto;
+    align-items: center;
+}
+a{
+    color: #302721;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+a:hover{
+    color: #E85D2A;
+}
+#welcome{
+    background-color: #FFF0DF;
+    padding: 80px 6%;
+    min-height: 450px;
+}
+#welcome h2{
+    color: #302721;
+    font-size: 42px;
+    margin: 0;
+}
+#welcome h3{
+    color: #D94F29;
+    font-size: 28px;
+    margin: 12px 0 20px;
+}
+#welcome p{
+    color: #4C4038;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 850px;
+    margin-bottom: 20px;
+}
+#welcome b{
+    color: #302721;
+}
+#welcome h2 + br,
+#welcome h3 + br{
+    display: none;
+}
+.btn{
+    background-color: #E85D2A;
+    height: 35px;
+    width: 130px;
+    border: none;
+    margin: 10px;
+    color: white;
+    transition: 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #B63820;
+    color: white;
+    transform: scale(1.1);
+}
+#Food_Menu{
+    background-color: #FFFAF5;
+    padding: 40px;
+}
+.cap{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #302721;
+    font-size: 32px;
+}
+.menu_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card p{
+    color: #302721;
+    font-size: 18px;
+}
+.card b{
+    color: #D94F29;
+}
+#offer{
+    background-color: #C75B45;
+    padding: 40px;
+}
+#offer .cap{
+    color: white;
+}
+#offer .card{
+    background-color: #FFF9F2;
+}
+#offer .card p{
+    color: #302721;
+}
+#offer .card b{
+    color: #C75B45;
+}
+#offer .btn{
+    background-color: #302721;
+    color: white;
+}
+#offer .btn:hover{
+    background-color: #E85D2A;
+    color: white;
+}
+#about{
+    background-color: #EAF0E4;
+    padding: 70px;
+    text-align: center;
+}
+#about h3{
+    color: #B63820;
+    font-size: 25px;
+}
+#about p{
+    color: #405044;
+    font-size: 17px;
+    line-height: 1.8;
+}
+#about b{
+    color: #B63820;
+}
+footer{
+    background-color: #873C30;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer a{
+    color: #FFE0B8;
+}
+footer a:hover{
+    color: white;
+}
+body > br,
+main > br{
+    display: none;
+}
+.copyright{
+    text-align: center;
+}
+@media (max-width: 950px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        margin-left: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu_items{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    header{
+        position: static;
+    }
+    #logo{
+        height: 70px;
+        width: 70px;
+    }
+    .menu_items{
+        grid-template-columns: 1fr;
+    }
+    #welcome{
+        padding: 30px 20px;
+        min-height: auto;
+    }
+    #welcome h2{
+        font-size: 30px;
+    }
+    #welcome h3{
+        font-size: 22px;
+    }
+    #Food_Menu{
+        padding: 20px;
+    }
+    #offer{
+        padding: 20px;
+    }
+    #about{
+        padding: 30px;
+    }
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
